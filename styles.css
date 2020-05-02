@@ -1,0 +1,33 @@
+/* boilerplate style */
+html {
+  font-size: 62.5%; /*Standard is 16px - this makes it 10px */
+}
+
+html body {
+  font-size: 1.6rem; /*Makes it 16px*/
+  color: white;
+  font-family: 'Ubuntu';
+  background-color: #181818;
+  overflow-x: hidden !important;
+}
+
+a,
+a:hover,
+a:link,
+a:visited,
+a:active {
+  text-decoration: none;
+}
+
+a {
+  color: #c4b998;
+}
+
+.hover:hover {
+  color: white;
+  opacity: 0.7;
+}
+
+.hover:active {
+  opacity: 1;
+}
