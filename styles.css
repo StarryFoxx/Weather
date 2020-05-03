@@ -7,7 +7,7 @@ html body {
   font-size: 1.6rem; /*Makes it 16px*/
   color: white;
   font-family: 'Ubuntu';
-  background-color: #181818;
+  background-color: #FFFF99;
   overflow-x: hidden !important;
 }
 
@@ -30,4 +30,54 @@ a {
 
 .hover:active {
   opacity: 1;
+}
+
+
+/*search submit */
+#submit-button {
+  font-size: 3rem;
+  color: white;
+}
+
+#submit-button:hover {
+  opacity:0.8;
+
+}
+
+#submit-button,
+input {
+  border: none;
+  background: none;
+  outline: none;
+  color: inherit;
+}
+
+
+.search-form{
+  width: 70%;
+}
+
+#cityName  {
+  font-size: 4rem;
+}
+
+.output {
+  font-size: 4rem;
+  color: red;
+}
+
+
+/* changes based on weather description */
+.rain {
+  background-image: url();
+
+}
+
+.sun {
+  background-image: url();
+
+}
+.cloud {
+  background-image: url();
+
 }
