@@ -27,22 +27,97 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     </head>
     <body>
-      <main class="container">
-        <nav>
+      <main>
 
-        </nav>
+        <header class="justify-content-start d-flex pt-4 pl-4">
+          <h1>Weather App</h1>
+        </header>
 
         <section>
-          <div class="d-flex justify-content-center text-center p-4 mt-4">
-            <form class="border-bottom form-border search-form" action="index.html" method="post">
-            <input type="text" placeholder="City" value="" id="cityName" class="text-center submit_on_enter" autofocus>
+          <div class="d-flex justify-content-center text-center row px-4 pb-4 mt-4">
+            <form class="border-bottom form-border search-formcol-6" action="index.html" method="post">
+            <input type="text" placeholder="City" value="" id="cityName" class="text-center col-6" autofocus>
             <div class="w-100"></div>
-            <button id="submit-button" class="p-4" type="button" name="Submit" onclick="getWeather()">Submit</button>
+            <button id="submit-button" class="p-4" type="button" name="Submit" onclick="getWeather(),changeData()">Submit</button>
           </form>
           </div>
           <div class="d-flex output weatherResponse">
           </div>
         </section>
+
+        <section>
+          <div class="justify-content-center d-flex m-5">
+            <div class="card text-center">
+              <div class="card-body">
+                <h5 class="card-title p-4 weatherCity">City</h5>
+                <p class="card-text weatherDescription">Weather Description</p>
+              </div>
+              <div class="card-body">
+              </div>
+              <div class="card-body row p-4 align-middle">
+                <div class="weather-icon col-6 p-4"> <!-- weather icon -->
+                  <i class="fas fa-cloud-sun-rain weatherIcon"></i>
+                </div>
+                <ul class="list-group list-group-flush col-6 p-4"> <!-- type of weather/temperature -->
+                  <li class="list-group-item weatherType">Type of Weather</li>
+                  <li class="list-group-item"><button class="weatherTemp" type="button" name="temperature" onclick="changeTemp()">Temp</button></li>
+                </ul>
+              </div>
+              <div class="card-body">
+              </div>
+              <div class="card-body">
+              </div>
+              <div class="card-body">
+              </div>
+            </div>
+          </div>
+
+        </section>
+
+
+
+        <!-- BACKUP
+        <section>
+          <div class="justify-content-center d-flex m-5">
+            <div class="card text-center">
+              <img src="./pictures/weather.jpg" class="card-img-top" alt="weather">
+              <div class="card-body">
+                <h5 class="card-title">Weather</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Cras justo odio</li>
+                <li class="list-group-item">Dapibus ac facilisis in</li>
+                <li class="list-group-item">Vestibulum at eros</li>
+              </ul>
+              <div class="card-body">
+                <a href="#" class="card-link">Card link</a>
+                <a href="#" class="card-link">Another link</a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        column version with img
+        <div class="justify-content-center d-flex m-5">
+          <div class="card text-center">
+            <img src="./pictures/weather.jpg" class="card-img-top p-2" alt="weather">
+            <div class="card-body">
+              <h5 class="card-title">City</h5>
+              <p class="card-text">Weather Description</p>
+            </div>
+            <div class="card-body row">
+              <div class="weather-icon col-6"> <! weather icon
+              </div>
+              <ul class="list-group list-group-flush col-6"> <!type of weather/temperature
+                <li class="list-group-item">Type of Weather</li>
+                <li class="list-group-item">Temperature</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+         test -->
       </main>
       <script src="scripts.js"></script>
     </body>
