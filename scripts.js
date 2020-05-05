@@ -10,7 +10,7 @@ function getWeather(){
     $(".weatherTemp").empty();
 
     var cityName = $('#cityName').val();
-    var apiCall = "http://api.openweathermap.org/data/2.5/weather?q=" + cityName + "&appid=3402441ac6d47ba974ee3af8940a579a";
+    var apiCall = "https://api.openweathermap.org/data/2.5/weather?q=" + cityName + "&appid=3402441ac6d47ba974ee3af8940a579a";
     $.getJSON(apiCall, weatherCallback); //displays the function w/out errors
 
 function weatherCallback(weatherData) {
